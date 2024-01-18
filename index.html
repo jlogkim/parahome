@@ -23,22 +23,36 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Three Videos in a Row</title>
+  <style>
+      .video-container {
+          display: flex;
+          justify-content: space-between;
+          max-width: 100%;
+          margin: 20px 0;
+      }
+
+      .video {
+          width: 50%; /* Adjust the width as needed */
+          box-sizing: border-box;
+      }
+  </style>
 
   <title>ParaHome: Parameterizing Everyday Home Activities Towards 3D Generative Modeling of Human-Object Interactions</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" integrity="sha384-KCoi1hWvqIEzUpQkr0/eqz25VwvpkQ+gSTsaZfGUO+S4zESTXZuAZS86EANASVca"
-  rel="stylesheet" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" integrity="sha384-KCoi1hWvqIEzUpQkr0/eqz25VwvpkQ+gSTsaZfGUO+S4zESTXZuAZS86EANASVca" crossorigin="anonymous"
+  rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" integrity="sha384-cxs0Bj979VdNByRZzAJ2KJWG8vH/kG7fwWZAIZW3Tmsw0rAuP/pu3I3LitFWEs18" crossorigin="anonymous">
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" integrity="sha384-cxs0Bj979VdNByRZzAJ2KJWG8vH/kG7fwWZAIZW3Tmsw0rAuP/pu3I3LitFWEs18" crossorigin="anonymous">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js" integrity="sha384-/r+//Gr1EDmAtu40BA3mLUNz1fa0zSRzML/uhwUi7y0V7QulZ9Z8QDvvHJlATHx6" crossorigin="anonymous"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
@@ -82,7 +96,7 @@
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper(Coming Soon!)</span>
+                        <span>Paper</span>
                       </a>
                     </span>
 
@@ -93,13 +107,13 @@
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary(Coming Soon!)</span>
+                      <span>Supplementary</span>
                     </a>
                   </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://jlogkim.github.io/parahome" target="_blank"
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -162,25 +176,97 @@
 <!-- End paper abstract -->
 
 <!-- Youtube video -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
-      <!-- Paper video. -->
+      
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+      
             <iframe src="https://www.youtube.com/embed/HeXqiK0eGec?si=mtAmctx0JHHYD6Ac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      
+      <h2 class="title is-3">System Overview</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/system_scaled.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="section hero">
+  <div class="section is-centered is-max-desktop">
+    <h2 class="title is-4 has-text-centered">Summary of ParaHome System and Dataset</h2>
+    <div class="row is-centered is-6"></div>
+    <div class="section row is-6">
+      <div class="columns is-centered">
+        <div class="column is-3">
+          <div class="content is-centered has-text-justified">
+            <h5 class="">Characteristics</h5>
+              <ul>
+                  <li>Human Objects Interaction in a <b>Natural Room setting</b></li>
+                  <li>Dexterous <b>Hand</b> Manipulation + Body Motion</li>
+                  <li>Interaction Scene with <b>Multiple Articulated Objects</b></li>
+                  <li>Navigate in a <b>Contextual Room Environment</b></li>
+                  <li>Capture Natural <b>Sequential</b> Manipulation Scene</li>
+                  <li>Total <b>440 minutes</b> diverse sequence from <b>30 subjects</b></li>
+              </ul>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="content is-centered has-text-justified">
+            <h5 class="">Dataset Contents</h5>
+              <ul>
+                  <li>Scanned <b>22</b> Objects</li>
+                  <li><b>Articulation Information</b> of each object</li>
+                  <li>Object 6D pose in the camera space</b></li>
+                  <li>Hand/Body joint positions in the camera space</li>
+                  <li>Relative orientation of hand and body joints</li>
+                  <li>Per-frame contact information</li>
+                  <li><b>Annotation</b> for each action</li>
+              </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>r
+
+<section class="hero is-large">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      
+      <h2 class="title is-3">Object Categories</h2>
+      <video class="video" controls>
+        <source src="static/videos/static.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <video class="video" controls>
+        <source src="static/videos/dynamic.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <!-- <section class="hero is-small is-light">
@@ -230,6 +316,9 @@
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
+            <p class="subtitle has-text-centered">
+              We present a novel capture system <i>ParaHome</i>, designed to capture and parameterize 3D movements of body, hands and diverse objects. By leveraging ParaHome, we collected a large-scale human-object interaction dataset in a common room setup with daily activity scenarios.
+            </p>
           </video>
         </div>
         <div class="item item-video2">
@@ -249,6 +338,36 @@
   </div>
 </section> -->
 <!-- End video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Annotated Actions</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <h2 class="subtitle has-text-centered"> Pour water from the kettle to the cup </h2>
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/pour_grid.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <h2 class="subtitle has-text-centered"> Cut the food on the cuttringboard </h2>
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/knife_grid.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <h2 class="subtitle has-text-centered"> Put the laundry in the washing machine </h2>
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/grid_washingmachine.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
