@@ -32,7 +32,7 @@
       }
 
       .video {
-          width: 50%; /* Adjust the width as needed */
+          width: 60%; /* Adjust the width as needed */
           box-sizing: border-box;
       }
   </style>
@@ -210,9 +210,9 @@
   </div>
 </section>
 
-<section class="section hero">
+<section class="hero is-small">
   <div class="section is-centered is-max-desktop">
-    <h2 class="title is-4 has-text-centered">Summary of ParaHome System and Dataset</h2>
+    <h2 class="title is-3 has-text-centered">Summary of ParaHome System and Dataset</h2>
     <div class="row is-centered is-6"></div>
     <div class="section row is-6">
       <div class="columns is-centered">
@@ -225,7 +225,7 @@
                   <li>Interaction Scene with <b>Multiple Articulated Objects</b></li>
                   <li>Navigate in a <b>Contextual Room Environment</b></li>
                   <li>Capture Natural <b>Sequential</b> Manipulation Scene</li>
-                  <li>Total <b>440 minutes</b> diverse sequence from <b>30 subjects</b></li>
+                  <li>Total <b>440 minutes</b> diverse sequence from <b>30 Subjects</b></li>
               </ul>
           </div>
         </div>
@@ -234,7 +234,7 @@
             <h5 class="">Dataset Contents</h5>
               <ul>
                   <li>Scanned <b>22</b> Objects</li>
-                  <li><b>Articulation Information</b> of each object</li>
+                  <!-- <li><b>Articulation Information</b> of each object</li> -->
                   <li>Object 6D pose in the camera space</b></li>
                   <li>Hand/Body joint positions in the camera space</li>
                   <li>Relative orientation of hand and body joints</li>
@@ -247,22 +247,21 @@
       </div>
     </div>
   </div>
-</section>r
-
-<section class="hero is-large">
+</section>
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
-      
-      <h2 class="title is-3">Object Categories</h2>
-      <video class="video" controls>
+    <h2 class="title is-3">Object Categories</h2>
+      <video class="video" controls autoplay loop="loop">
         <source src="static/videos/static.mp4" type="video/mp4">
         Your browser does not support the video tag.
-    </video>
-
-    <video class="video" controls>
+      </video>
+      <h2 class="subtitle has-text-centered"> Static Objects </h2>
+    <video class="video" controls autoplay loop="loop">
         <source src="static/videos/dynamic.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <h2 class="subtitle has-text-centered"> Articulated Objects </h2>
     </div>
   </div>
 </section>
